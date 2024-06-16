@@ -33,6 +33,28 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+.logo-container:hover .site-title {
+  color: #ffcc00;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
