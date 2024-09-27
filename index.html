@@ -3,6 +3,60 @@
 
 <head>
   <style>
+    
+    /* Style for the Custom Modal Box birthday wishes */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 1000; /* Ensure it sits on top */
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.custom-modal-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#birthdayHeading {
+    font-size: 28px;
+    color: #ff4081;
+}
+
+#birthdayMessage {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* end model box  */
     .logo-container {
       display: flex;
       align-items: center;
@@ -62,7 +116,14 @@
 </head>
 
 <body>
-
+  <!-- bithday wishes -->
+  <div id="birthdayWishesModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <img id="birthdayImage" src="assets/img/testimonials/birthday wishes.jpeg" alt="Happy Birthday!" class="custom-modal-image">
+        <h2 id="birthdayHeading">Happy Birthday!</h2>
+        <p id="birthdayMessage">Your leadership, kindness, and dedication inspire us all. May this day be a celebration of your remarkable contributions and vision for a brighter future!</p>
+    </div>
+</div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -991,7 +1052,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+  // Wait for the DOM to load //bithday wishes
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the modal element by its unique ID
+    var modal = document.getElementById("birthdayWishesModal");
 
+    // Display the modal when the page loads
+    modal.style.display = "flex";  // Flex display to center the modal content
+
+    // Automatically hide the modal after 3 seconds (3000 ms)
+    setTimeout(function() {
+        modal.style.display = "none";
+    }, 3000);
+});
+
+</script>
 </body>
 
 </html>
