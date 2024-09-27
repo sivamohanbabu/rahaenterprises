@@ -124,6 +124,7 @@
         <p id="birthdayMessage">Your leadership, kindness, and dedication inspire us all. May this day be a celebration of your remarkable contributions and vision for a brighter future!</p>
     </div>
 </div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -1001,9 +1002,12 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Subscribe for the Newsletter</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <form onsubmit="displayEmail(event)">
+              <input type="email" id="email" required placeholder="Enter your email">
+              <input type="submit" value="Subscribe">
+          </form>
+      
+          <h2 id="thankYouMessage"></h2>
           </div>
 
         </div>
@@ -1053,6 +1057,12 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 <script>
+   function displayEmail(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const email = document.getElementById("email").value; // Get email input value
+            document.getElementById("thankYouMessage").innerText = "Thank you for subscribing! Your email: " + email;
+            document.getElementById("email").value = ""; // Clear the input field
+        }
   // Wait for the DOM to load //bithday wishes
 document.addEventListener("DOMContentLoaded", function() {
     // Get the modal element by its unique ID
