@@ -9,59 +9,27 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* Default styling (for larger screens like desktops) */
 .console-container {
-  font-family: Khula, sans-serif;
-  font-size: 3.5em;
-  padding-top: 230px;
-  padding-left: 212px;
-  display: block;
-  position: absolute;
-  color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+ 
+  font-family:Khula;
+  font-size:3.5em;
+  padding-top: 250px;
+ padding-left: 222px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
 }
-
 .console-underscore {
-  display: inline-block;
-  position: relative;
-  top: -0.14em;
-  left: 10px;
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }
-
-/* Responsive design: For tablets and smaller laptops */
-@media screen and (max-width: 1024px) {
-  .console-container {
-    font-size: 2.5em;
-    padding-top: 120px;
-    padding-left: 100px;
-  }
-}
-
-/* Responsive design: For mobile devices (portrait and landscape) */
-@media screen and (max-width: 768px) {
-  .console-container {
-    font-size: 2em;
-    padding-top: 100px;
-    padding-left: 50px;
-    text-align: center;
-  }
-}
-
-/* For very small mobile devices (phones with width below 480px) */
-@media screen and (max-width: 480px) {
-  .console-container {
-    font-size: 1.5em;
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-  }
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
