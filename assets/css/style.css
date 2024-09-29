@@ -9,27 +9,47 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-.console-container {
- 
-  font-family:Khula;
-  font-size:3.5em;
-  padding-top: 250px;
- padding-left: 222px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+.glow-text {
+  font-family: 'Khula', sans-serif;
+  font-size: 3.5em;
+  color: #00f; /* Blue text */
+
+  text-shadow:
+    0 0 10px #FFA500,  /* Orange shadow */
+    0 0 20px #FFA500,  /* Orange glow */
+    0 0 30px #FFF,     /* White shadow */
+    0 0 40px #FFF,     /* White glow */
+    0 0 50px #00F,     /* Blue shadow */
+    0 0 60px #00F;     /* Blue glow */
+
+  /* Animation to create a glowing effect */
+  animation: glowing 2s infinite alternate;
 }
-.console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+
+/* Keyframes for the glowing animation */
+@keyframes glowing {
+  0% {
+    text-shadow:
+      0 0 10px #FFA500,
+      0 0 20px #FFA500,
+      0 0 30px #FFF,
+      0 0 40px #FFF,
+      0 0 50px #00F,
+      0 0 60px #00F;
+  }
+  100% {
+    text-shadow:
+      0 0 20px #FFA500,  /* Increase orange glow */
+      0 0 30px #FFA500,  /* Increase orange shadow */
+      0 0 40px #FFF,     /* Increase white shadow */
+      0 0 50px #FFF,     /* Increase white glow */
+      0 0 60px #00F,     /* Increase blue shadow */
+      0 0 70px #00F;     /* Increase blue glow */
+  }
 }
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
