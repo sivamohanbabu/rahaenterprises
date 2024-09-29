@@ -162,7 +162,7 @@
             </ul>
           </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -187,7 +187,8 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Transforming Brands in the Digital Age </h1>
+          <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+          <!-- <h1>Transforming Brands in the Digital Age </h1> -->
           <h2>Crafting Connections and Amplifying Brands on Social Media.We are a team of marketers, campaign
             specialists,developers, designers & SEO experts.​</h2>
           <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
@@ -1071,7 +1072,7 @@
    function displayEmail(event) {
             event.preventDefault(); // Prevent the form from submitting
             const email = document.getElementById("email").value; // Get email input value
-            document.getElementById("thankYouMessage").innerText = "Thank you for subscribing! Your email: " + email;
+            document.getElementById("thankYouMessage").innerText = "Thank you for subscribing! Your email" + email;
             document.getElementById("email").value = ""; // Clear the input field
         }
   // Wait for the DOM to load //bithday wishes
