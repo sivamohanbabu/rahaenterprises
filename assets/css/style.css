@@ -1024,7 +1024,7 @@ section {
 
 .tabs .nav-link:hover {
   color: var(--accent-color);
-  background-color: rgba(0, 0, 0, 0.05); /* subtle hover background */
+  background-color: #5846f9; /* subtle hover background */
 }
 
 .tabs .nav-link.active {
