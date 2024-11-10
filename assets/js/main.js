@@ -5,6 +5,23 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+document.querySelectorAll('.package-title').forEach(title => {
+  title.addEventListener('click', () => {
+    const packageDetails = title.nextElementSibling.nextElementSibling; // The <ul> element
+    const icon = title.querySelector('.expand-icon');
+
+    // Toggle visibility of the package details
+    if (packageDetails.style.display === 'block') {
+      packageDetails.style.display = 'none';
+      icon.style.transform = 'rotate(0deg)'; // Reset arrow to point down
+    } else {
+      packageDetails.style.display = 'block';
+      packageDetails.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the expanded details
+      icon.style.transform = 'rotate(180deg)'; // Rotate arrow to point up
+    }
+  });
+});
+
 
 (function() {
   "use strict";

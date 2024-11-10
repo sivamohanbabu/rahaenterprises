@@ -1,14 +1,4 @@
-/**
-* Template Name: Techie
-* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 .glow-text {
   font-family: 'Khula', sans-serif;
   font-size: 3.5em;
@@ -68,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
 }
 
 
@@ -217,7 +207,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
@@ -634,7 +624,7 @@ animations ::
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -798,7 +788,7 @@ section {
 }
 
 .about .content .read-more {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -835,7 +825,7 @@ section {
   display: block;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
 }
 
 .counts .counters p {
@@ -1123,7 +1113,7 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1288,24 +1278,42 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+/* General Pricing Box Styles */
+/* General Styling for Pricing Boxes */
 .pricing .box {
   padding: 20px;
   background: #fff;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
+/* Package Title */
+.pricing .package-title {
+  font-size: 18px;
   font-weight: 600;
   color: #2c4964;
   background: #f8f8f8;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  cursor: pointer; /* Add cursor pointer for interactive feel */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing .expand-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Price Section */
+.price-content {
+  margin: 15px 0;
+  font-size: 24px;
 }
 
 .pricing h4 {
@@ -1316,84 +1324,44 @@ section {
   margin-bottom: 20px;
 }
 
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
+/* Package Features List (Initially Hidden) */
+.package-details {
   padding: 0;
   list-style: none;
   color: #444444;
   text-align: center;
   line-height: 20px;
   font-size: 14px;
+  display: none; /* Initially hidden */
+  margin-bottom: 20px;
 }
 
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #5846f9;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
+/* Buy Now Button */
 .pricing .btn-buy {
   background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
   display: inline-block;
   padding: 10px 35px;
   border-radius: 4px;
   color: #fff;
-  transition: none;
   font-size: 15px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .pricing .btn-buy:hover {
   background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pricing .featured h3 {
-  color: #fff;
-  background: #5846f9;
+/* Rotation of Arrow on Expansion */
+.pricing .expanded .expand-icon {
+  transform: rotate(180deg); /* Rotate arrow to point up */
 }
 
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: green;
-  color: #fff;
-}
+/* JavaScript to Expand and Collapse Package Details */
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -1699,7 +1667,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", "Lato", "Poppins", Arial, sans-serif;
 }
 
 #footer .footer-top h4 {
