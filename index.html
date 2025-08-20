@@ -141,6 +141,179 @@
 </head>
 
 <body>
+  <!-- RAHA Testimonials Popup -->
+<div id="rahaTestimonialPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="popup-title">RAHA Testimonials</h2>
+
+    <div class="testimonial-single">
+      <div class="testimonial-item active">
+        <b>Dr. Vikranth Chunduri, MBBS MD DM, Gastroenterology</b>, Mithra Medicare Hospitals, Bhimavaram, AP
+        <p>“I have been working with RAHA for the past several months, and I can confidently say that their social
+          media expertise has been a game-changer for my practice... Highly recommend their services to any healthcare
+          professional looking to grow their practice and connect with more patients online.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>Kesineni Sivanath (Chinni)</b>, Vijayawada MP, TDP Party
+        <p>“As a Member of Parliament, I have seen firsthand how powerful social media can be... I commend their
+          efforts in supporting democracy and free expression.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>Tamballapalli Rama Devi</b>, Nandigama Incharge, JanaSena Party
+        <p>“Working with RAHA has been a game-changer for our campaign... Thanks to their efforts, we've seen
+          significant growth in support and outreach.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>Meriga Muralidhar</b>, MLC, YSRCP Party, Andhra Pradesh
+        <p>“I am impressed by their professionalism and innovative approach to social media strategy... Their
+          commitment to excellence truly sets them apart.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>Divya Vani Chowdhary Korrapati (Bapu Bomma)</b>, Actress, Congress Party (Telangana)
+        <p>“My journey with RAHA has been an absolute game-changer for both my career and political advocacy... Their
+          approach has empowered me to share my voice with even greater impact.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>MSRR & RR College</b>, Kurnool, Andhra Pradesh
+        <p>“We have partnered with RAHA to enhance our online presence, and the results have been outstanding...
+          Highly recommended for any institution looking to elevate their digital marketing efforts.”</p>
+      </div>
+
+      <div class="testimonial-item">
+        <b>Crispy Days Food Chains</b>
+        <p>“Collaborating with RAHA has been a path-breaker for our restaurant... We have seen an increase in customer
+          engagement and reservations.”</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+  }
+
+  .popup-content {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 750px;
+    width: 95%;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 255, 255, 0.3);
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(.19, 1, .22, 1);
+    position: relative;
+  }
+
+  .popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .popup-overlay.active .popup-content {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .popup-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .close-btn:hover {
+    transform: rotate(90deg) scale(1.2);
+    color: #06b6d4;
+  }
+
+  .testimonial-item {
+    display: none;
+  }
+
+  .testimonial-item.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("rahaTestimonialPopup");
+    const closeBtn = document.querySelector(".close-btn");
+    const testimonials = document.querySelectorAll(".testimonial-item");
+    let index = 0;
+
+    function showTestimonial(i) {
+      testimonials.forEach((t, idx) => t.classList.toggle("active", idx === i));
+    }
+
+    // Open popup after 2s
+    setTimeout(() => {
+      popup.classList.add("active");
+      showTestimonial(index);
+    }, 2000);
+
+    // Rotate testimonials every 5s
+    setInterval(() => {
+      if (popup.classList.contains("active")) {
+        index = (index + 1) % testimonials.length;
+        showTestimonial(index);
+      }
+    }, 5000);
+
+    // Close popup
+    closeBtn.addEventListener("click", () => popup.classList.remove("active"));
+  });
+</script>
+
+
   <!-- bithday wishes
   <div id="birthdayWishesModal" class="custom-modal">
     <div class="custom-modal-content">
