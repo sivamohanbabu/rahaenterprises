@@ -269,30 +269,209 @@
 </a>
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+   section id="about" class="about section-bg position-relative">
+    <div class="container">
+  
+      <div class="row align-items-center">
+  
+        <!-- Image Column -->
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+          <div class="about-img-wrapper position-relative">
+            <img src="assets/img/about.jpg" class="img-fluid animated-img" alt="Digital Marketing Importance">
+            <!-- Floating shapes -->
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>In the Digital Era, It's About More Than Just Presence</h3>
-            <p class="fst-italic">
-                Today, success isn't measured by simply existing online—it's about making an impact. We partner with innovative brands like yours to enhance your visibility, boost engagement, and build lasting relationships with your audience. Together, we don't just gain customers; we create loyal brand advocates.
-            </p>
-            <ul>
-                <li><i class="bi bi-check-circle"></i> Our focus is on actionable outcomes, not vanity metrics. We drive real, measurable business growth that moves the needle.</li>
-                <li><i class="bi bi-check-circle"></i> From increasing revenue and improving retention to establishing an exceptional online reputation, we deliver results that matter.</li>
-                <li><i class="bi bi-check-circle"></i> We're dedicated to delivering a strong ROI, helping your brand scale and stay ahead in a rapidly evolving market.</li>
-            </ul>
-           
         </div>
-        
+  
+        <!-- Text Column -->
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="300">
+          <h3 class="gradient-text">In the Digital Era, It's About More Than Just Presence</h3>
+          <p class="fst-italic about-text">
+            Today, success isn't measured by simply existing online—it’s about making a **real impact**. Digital marketing
+            allows brands to **reach the right audience**, **generate leads**, and **build long-term loyalty**. We empower
+            businesses to thrive online through strategic campaigns and measurable results.
+          </p>
+  
+          <ul class="about-list">
+            <li data-aos="fade-up" data-aos-delay="400"><i class="bi bi-check-circle"></i> Focused on **actionable
+              outcomes**, not just vanity metrics. Real results that grow your business.</li>
+            <li data-aos="fade-up" data-aos-delay="500"><i class="bi bi-check-circle"></i> Improve revenue, retention, and
+              your **online reputation** with measurable strategies.</li>
+            <li data-aos="fade-up" data-aos-delay="600"><i class="bi bi-check-circle"></i> Strong ROI delivered through
+              data-driven campaigns, ensuring your brand stays ahead.</li>
+          </ul>
+  
+          <!-- Digital Marketing Impact Boxes -->
+          <div class="row mt-4">
+            <div class="col-md-6" data-aos="flip-left" data-aos-delay="700">
+              <div class="impact-box">
+                <h4>80%+</h4>
+                <p>of consumers research online before making a purchase. Digital presence matters!</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="flip-right" data-aos-delay="800">
+              <div class="impact-box">
+                <h4>70%+</h4>
+                <p>of marketers say digital marketing drives better ROI than traditional methods.</p>
+              </div>
+            </div>
+          </div>
+  
         </div>
-
+  
       </div>
-    </section>
+  
+    </div>
+  </section>
+  
+  <style>
+    /* Gradient heading */
+    .gradient-text {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  
+    /* About text */
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: textFadeIn 1s forwards 0.5s;
+    }
+  
+    @keyframes textFadeIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    /* List items hover effect */
+    .about-list li {
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 15px;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+    }
+  
+    .about-list li:hover {
+      transform: translateX(10px);
+      color: #ff7e5f;
+    }
+  
+    .about-list li i {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      font-size: 1.2rem;
+      color: #feb47b;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    /* Image animation */
+    .animated-img {
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+  
+    .animated-img:hover {
+      transform: scale(1.08) rotate(-2deg);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* Floating background shapes */
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      opacity: 0.15;
+      z-index: 0;
+      animation: float 6s ease-in-out infinite;
+    }
+  
+    .shape-1 {
+      width: 80px;
+      height: 80px;
+      top: -20px;
+      right: 50px;
+    }
+  
+    .shape-2 {
+      width: 50px;
+      height: 50px;
+      bottom: 10px;
+      left: 30px;
+    }
+  
+    .shape-3 {
+      width: 60px;
+      height: 60px;
+      top: 150px;
+      left: -20px;
+    }
+  
+    @keyframes float {
+  
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+  
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+  
+    /* Impact boxes */
+    .impact-box {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .impact-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    }
+  
+    .impact-box h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ff7e5f;
+    }
+  
+    .impact-box p {
+      font-size: 1rem;
+      color: #333;
+      margin-top: 5px;
+    }
+  </style>
+  
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
     <!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
@@ -331,7 +510,7 @@
     </section><!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
- section id="services" class="services section-bg">
+ <section id="services" class="services section-bg">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
