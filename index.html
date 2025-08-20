@@ -193,11 +193,58 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Shaping the Future of Brands in the Digital Era</h1>
-          <h2>Building Strong Connections and Boosting Brands on Social Media. Our team of marketing strategists, campaign experts, developers, designers, and SEO specialists is dedicated to your success.</h2>
-          
-          <!-- <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div> -->
+          <h1 id="dynamic-title" style="transition: all 0.5s ease; font-weight: bold;">Shaping the Future of Brands in the
+            Digital Era</h1>
+          <h2 id="dynamic-subtitle" style="transition: all 0.5s ease; color: #555;">Building Strong Connections and Boosting
+            Brands on Social Media. Our team of marketing strategists, campaign experts, developers, designers, and SEO
+            specialists is dedicated to your success.</h2>
         </div>
+        
+        <script>
+          const titles = [
+            "Shaping the Future of Brands in the Digital Era",
+            "Empowering Businesses with Creative Strategies",
+            "Boosting Brands Through Innovative Marketing",
+            "Connecting Audiences with Impactful Campaigns"
+          ];
+
+          const subtitles = [
+            "Building Strong Connections and Boosting Brands on Social Media. Our team of marketing strategists, campaign experts, developers, designers, and SEO specialists is dedicated to your success.",
+            "Helping brands grow digitally with data-driven insights and innovative solutions.",
+            "Delivering results that strengthen brand identity and reach across platforms.",
+            "Driving measurable impact for businesses through creative and strategic campaigns."
+          ];
+
+          // Light pastel colors
+          const colors = ["#FFD6A5", "#FDFFB6", "#CAFFBF", "#9BF6FF"];
+
+          let index = 0;
+
+          setInterval(() => {
+            index = (index + 1) % titles.length;
+
+            const titleEl = document.getElementById('dynamic-title');
+            const subtitleEl = document.getElementById('dynamic-subtitle');
+
+            titleEl.innerText = titles[index];
+            subtitleEl.innerText = subtitles[index];
+
+            // Eye-catching light color change
+            titleEl.style.color = colors[index];
+            subtitleEl.style.color = colors[(index + 2) % colors.length];
+
+            // Slight pop effect
+            titleEl.style.transform = "scale(1.1)";
+            subtitleEl.style.transform = "scale(1.05)";
+
+            setTimeout(() => {
+              titleEl.style.transform = "scale(1)";
+              subtitleEl.style.transform = "scale(1)";
+            }, 500);
+
+          }, 4000); // change every 4 seconds
+        </script>
+
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
