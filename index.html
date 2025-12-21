@@ -4,6 +4,82 @@
 <head>
   
   <style>
+    .pricing-badge {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #e48f75, #ffb199);
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: pulse 1.8s infinite;
+}
+
+.price-content sub {
+  font-size: 13px;
+  color: #555;
+}
+
+.price-highlight {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #e48f75;
+}
+
+.package-details li i {
+  color: #e48f75;
+  margin-right: 8px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+    .pricing-badge {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #e48f75, #ffb199);
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: pulse 1.8s infinite;
+}
+
+.price-content sub {
+  font-size: 13px;
+  color: #555;
+}
+
+.price-highlight {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #e48f75;
+}
+
+.package-details li i {
+  color: #e48f75;
+  margin-right: 8px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
     .whatsapp-float {
     position: fixed;
     width: 60px;
@@ -1190,163 +1266,130 @@
         </div>
     
         <div class="row">
-          <!-- Silver Package -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box" id="silver-package">
-              <h3 class="package-title" style="background-color: #e48f75;">
-                SILVER Package
-                <span class="expand-icon">&#9660;</span> <!-- Down arrow initially -->
-              </h3>
-              <div class="price-content">
-                
-              </div>
-              <ul class="package-details">
-                <h4><sup>₹</sup>25000</h4>
-                <li><b>Monthly Plans</b></li>
-                <li>Graphics Designs (20 Creatives)</li>
-                <li>Promotional Videos 1</li>
-                <li>Keywords 2</li>
-                <li>Comprehensive On Page Analysis</li>
-                <li>Webmaster Tool Management Sitemap</li>
-                <li>Social Media Marketing</li>
-                <li>Articles 2</li>
-                <li>Support</li>
-              </ul>
-              <!-- <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
-              </div> -->
-            </div>
-          </div>
-    
-          <!-- Gold Package -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="box" id="gold-package">
-              <h3 class="package-title" style="background-color: #e9d878;">
-                GOLD Package
-                <span class="expand-icon">&#9660;</span>
-              </h3>
-              <div class="price-content">
-                
-              </div>
-              <ul class="package-details">
-                <h4><sup>₹</sup>35000</h4>
-                <li><b>Monthly Plans</b></li>
-                <li>Graphics Designs (22 Creatives + 4 Concept Creatives)</li>
-                <li>Promotional Videos 2 (Special Wishes Concept Videos)</li>
-                <li>Keywords 4</li>
-                <li>Competition Analysis 2</li>
-                <li>SEO Report</li>
-                <li>Comprehensive On Page Analysis</li>
-                <li>Video Marketing</li>
-                <li>Youtube Optimization</li>
-                <li>Page Speed Analysis</li>
-                <li>Content Marketing & Link Building</li>
-                <li>Webmaster Tool Management Sitemap</li>
-                <li>Social Media Marketing</li>
-                <li>Articles 4</li>
-                <li>ORM</li>
-                <li>Weekly/Monthly Report 24/7</li>
-                <li>Support</li>
-              </ul>
-              <!-- <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
-              </div> -->
-            </div>
-          </div>
-    
-          <!-- Diamond Package -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="box" id="diamond-package">
-              <h3 class="package-title" style="background-color: #bc77df;">
-                DIAMOND Package
-                <span class="expand-icon">&#9660;</span>
-              </h3>
-              <div class="price-content">
-                
-              </div>
-              <ul class="package-details">
-                <h4><sup>₹</sup>45000</h4>
-                <li><b>Monthly Plans</b></li>
-                <li>Graphics Designs (24 Creatives + 4 Concept Creatives)</li>
-                <li>Promotional Videos 4 (Special Wishes Concept Videos)</li>
-                <li>Keywords 8</li>
-                <li>Competition Analysis 4</li>
-                <li>SEO Report</li>
-                <li>Comprehensive On Page Analysis</li>
-                <li>Video Marketing</li>
-                <li>Youtube Optimization</li>
-                <li>Page Speed Analysis</li>
-                <li>Content Marketing & Link Building</li>
-                <li>Webmaster Tool Management Sitemap</li>
-                <li>Social Media Marketing</li>
-                <li>Articles 6</li>
-                <li>ORM</li>
-                <li>Weekly/Monthly Report 24/7</li>
-                <li>Support</li>
-              </ul>
-              <!-- <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
-              </div> -->
-            </div>
-          </div>
-    
-          <!-- Platinum Package -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="box featured" id="platinum-package">
-              <!-- <span class="advanced">Advanced</span> -->
-              <h3 class="package-title" style="background-color: #d16ea6;">
-                PLATINUM Package
-                <span class="expand-icon">&#9660;</span>
-              </h3>
-              <div class="price-content">
-                
-              </div>
-              <ul class="package-details">
-                <h4><sup>₹</sup>65000</h4>
-                <li><b>Monthly Plans</b></li>
-                <li>Graphics Designs (Unlimited)</li>
-                <li>Promotional Videos 10 (Special Wishes Concept Videos)</li>
-                <li>Keywords 8</li>
-                <li>Competition Analysis 4</li>
-                <li>SEO Report</li>
-                <li>Comprehensive On Page Analysis</li>
-                <li>Video Marketing</li>
-                <li>Youtube Optimization</li>
-                <li>Page Speed Analysis</li>
-                <li>Content Marketing & Link Building</li>
-                <li>Webmaster Tool Management Sitemap</li>
-                <li>Social Media Marketing</li>
-                <li>Articles 6</li>
-                <li>ORM</li>
-                <li>Weekly/Monthly Report 24/7</li>
-                <li>Support</li>
-              </ul>
-              <ul class="package-details">
-                <h4><sup>₹</sup>65000</h4>
-                <li><b>Monthly Plans</b></li>
-                <li>Graphics Designs (Unlimited)</li>
-                <li>Promotional Videos 10 (Special Wishes Concept Videos)</li>
-                <li>Keywords 8</li>
-                <li>Competition Analysis 4</li>
-                <li>SEO Report</li>
-                <li>Comprehensive On Page Analysis</li>
-                <li>Video Marketing</li>
-                <li>Youtube Optimization</li>
-                <li>Page Speed Analysis</li>
-                <li>Content Marketing & Link Building</li>
-                <li>Webmaster Tool Management Sitemap</li>
-                <li>Social Media Marketing</li>
-                <li>Articles 6</li>
-                <li>ORM</li>
-                <li>Weekly/Monthly Report 24/7</li>
-                <li>Support</li>
-              </ul>
-              <!-- <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
-              </div> -->
-            </div>
-          </div>
-    
+<div class="row">
+
+  <!-- RAHA IGNITE -->
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="box" id="silver-package">
+      <h3 class="package-title" style="background-color: #e48f75;">
+        <i class="bi bi-rocket-takeoff-fill me-2"></i>
+        RAHA IGNITE
+        <span class="expand-icon">&#9660;</span>
+      </h3>
+
+      <div class="price-content text-center mt-3">
+        <div class="pricing-badge">
+          <i class="bi bi-currency-rupee"></i>
+        </div>
+        <sub>
+          <b>Smart Monthly Pricing</b><br>
+          Click Above to Explore Cost Details
+        </sub>
+      </div>
+
+      <ul class="package-details mt-3">
+        <h4 class="price-highlight"><sup>₹</sup>20,000</h4>
+        <li><i class="bi bi-graph-up"></i> Engagement</li>
+        <li><i class="bi bi-phone"></i> Platform Focus</li>
+        <li><i class="bi bi-brush"></i> Strategy & Management (10 Creatives)</li>
+        <li><i class="bi bi-camera-video"></i> Content Marketing: 8 Reels/Shorts, 2 Long Videos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RAHA SCALE -->
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+    <div class="box" id="gold-package">
+      <h3 class="package-title" style="background-color: #e9d878;">
+        <i class="bi bi-bar-chart-line-fill me-2"></i>
+        RAHA SCALE
+        <span class="expand-icon">&#9660;</span>
+      </h3>
+
+      <div class="price-content text-center mt-3">
+        <div class="pricing-badge">
+          <i class="bi bi-currency-rupee"></i>
+        </div>
+        <sub>
+          <b>Smart Monthly Pricing</b><br>
+          Click Above to Explore Cost Details
+        </sub>
+      </div>
+
+      <ul class="package-details mt-3">
+        <h4 class="price-highlight"><sup>₹</sup>40,000</h4>
+        <li><i class="bi bi-graph-up"></i> Engagement</li>
+        <li><i class="bi bi-phone"></i> Platform Focus</li>
+        <li><i class="bi bi-brush"></i> Strategy & Management (15 Creatives)</li>
+        <li><i class="bi bi-camera-video"></i> Content Marketing: 15 Reels/Shorts, 4 Long Videos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RAHA LEAD -->
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <div class="box" id="diamond-package">
+      <h3 class="package-title" style="background-color: #bc77df;">
+        <i class="bi bi-trophy-fill me-2"></i>
+        RAHA LEAD
+        <span class="expand-icon">&#9660;</span>
+      </h3>
+
+      <div class="price-content text-center mt-3">
+        <div class="pricing-badge">
+          <i class="bi bi-currency-rupee"></i>
+        </div>
+        <sub>
+          <b>Smart Monthly Pricing</b><br>
+          Click Above to Explore Cost Details
+        </sub>
+      </div>
+
+      <ul class="package-details mt-3">
+        <h4 class="price-highlight"><sup>₹</sup>60,000</h4>
+        <li><i class="bi bi-graph-up"></i> Engagement</li>
+        <li><i class="bi bi-phone"></i> Platform Focus</li>
+        <li><i class="bi bi-brush"></i> Strategy & Management (30 Creatives)</li>
+        <li><i class="bi bi-camera-video"></i> Content Marketing: 30 Reels/Shorts, 8 Long Videos</li>
+        <li><i class="bi bi-bullseye"></i> Advertising (Up to ₹6,000)</li>
+        <li><i class="bi bi-file-earmark-text"></i> SEO Analysis Report</li>
+        <li><i class="bi bi-robot"></i> AI Marketing</li>
+        <li><i class="bi bi-person-lines-fill"></i> Direct Marketing (Up to 1000 Contacts)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RAHA CRAFT -->
+  <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="box featured" id="platinum-package">
+      <h3 class="package-title" style="background-color: #d16ea6;">
+        <i class="bi bi-palette-fill me-2"></i>
+        RAHA CRAFT
+        <span class="expand-icon">&#9660;</span>
+      </h3>
+
+      <div class="price-content text-center mt-3">
+        <div class="pricing-badge">
+          <i class="bi bi-currency-rupee"></i>
+        </div>
+        <sub>
+          <b>Smart Monthly Pricing</b><br>
+          Click Above to Explore Cost Details
+        </sub>
+      </div>
+
+      <ul class="package-details mt-3">
+        <h4 class="price-highlight">Starting from <sup>₹</sup>15,000</h4>
+        <li><i class="bi bi-brush"></i> Tailored Social Media Creatives</li>
+        <li><i class="bi bi-paint-bucket"></i> Custom Branding Elements</li>
+        <li><i class="bi bi-files"></i> Digital Assets for Your Brand</li>
+        <li><i class="bi bi-gear-fill"></i> Fully Customised Strategy</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
         </div>
     
       </div>
